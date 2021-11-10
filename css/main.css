@@ -56,6 +56,90 @@ footer {
     padding: 1em;
 }
 
+/* positioning rules start here */
+
+.text-align-center{
+text-align:center;
+background-color:aqua
+}
+
+.margin-auto > div{
+margin:auto;
+width:50%;
+background-color: beige;
+text-align:center;
+}
+
+
+/* positioning rules end here */
+
+/* Responsive 2 column layout starts here*/
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ 
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+    border: 1px solid black;
+  }
+   /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+/* Responsive 2 column layout starts here*/
+
+/* font awesome flesbox social media rules start here*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  } 
+
+/* font awesome flesbox social media rules end here*/
+
 /* Responsive rules */
 
 /* DESKTOP */
@@ -112,5 +196,11 @@ footer {
     picture.profile img {
         width: 100%;
     }
+
+    /*views columns stacked in phone*/
+   .column {
+    width: 100%;
+  }
+
     
 }
